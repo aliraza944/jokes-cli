@@ -1,0 +1,19 @@
+{
+  "name": "jokes-cli",
+  "version": "1.0.0",
+  "description": "Simple cli to print jokes",
+  "main": "bin/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aliraza944/jokes-cli.git"
+  },
+  "author": "aliraza944",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aliraza944/jokes-cli/issues"
+  },
+  "homepage": "https://github.com/aliraza944/jokes-cli#readme"
+}
