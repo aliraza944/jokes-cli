@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "Simple cli to print jokes",
   "main": "bin/index.js",
+  "bin": "bin/index.js",
   "scripts": {
+    "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
