@@ -1,5 +1,7 @@
 #!/usr/bin/env node
+import { getRandomJokes } from "./getRandomJokes";
 
-const currentDateTime = new Date().toISOString();
-
-console.log(currentDateTime);
+(async () => {
+  const joke = await getRandomJokes();
+  console.log(joke);
+})();
