@@ -1,5 +1,5 @@
 import axios from "axios";
-
+import chalk = require("chalk");
 export const getRandomJokes = async () => {
   try {
     const { data } = await axios.get(
@@ -7,9 +7,9 @@ export const getRandomJokes = async () => {
     );
 
     return `
-    ${data.setup}
+    ${chalk.blue(data.setup)}
     
-    ${data.punchline}
+    ${chalk.yellow.bgBlack.bold(data.punchline)}
     `;
   } catch (error) {
     throw new Error("Error fetching jokes");
