@@ -7,7 +7,7 @@ const getRandomJokes = async () => {
     );
 
     return `
-    ${chalk.blue(data.setup)}
+    ${chalk.green(data.setup)}
     
     ${chalk.yellow.bgBlack.bold(data.punchline)}
     `;
