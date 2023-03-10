@@ -9,5 +9,7 @@ import ora from "ora";
   if (joke) {
     spinner.stop();
   }
-  console.log(boxen(joke, { title: "Jokes", titleAlignment: "center" }));
+  console.log(
+    boxen(joke, { padding: 2, title: "Jokes", titleAlignment: "center" })
+  );
 })();
