@@ -7,7 +7,7 @@
   "bin": "bin/index.js",
   "scripts": {
     "build": "tsc",
-    "local": "npm run build && npx jokes-cli",
+    "local": "npm run build && npx funny-jokes-cli",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
