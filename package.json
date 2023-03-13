@@ -32,5 +32,12 @@
     "funny-jokes-cli": "^1.0.2",
     "ora": "^6.1.2",
     "yargs": "^17.7.1"
-  }
+  },
+  "keywords": [
+    "jokes",
+    "funny",
+    "cli",
+    "command-line",
+    "dad jokes"
+  ]
 }
