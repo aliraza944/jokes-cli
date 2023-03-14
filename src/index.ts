@@ -1,15 +1,9 @@
 #!/usr/bin/env node
 import getRandomJokes from "./getRandomJokes.js";
-import boxen from "boxen";
-import ora from "ora";
+import getJokesByType from "./getJokesByType.js";
+import yargs from "yargs";
+import { hideBin } from "yargs/helpers";
+const argv = yargs(hideBin(process.argv)).argv;
 (async () => {
-  const spinner = ora("Loading").start();
-  spinner.color = "yellow";
-  const joke = await getRandomJokes();
-  if (joke) {
-    spinner.stop();
-  }
-  console.log(
-    boxen(joke, { padding: 2, title: "Jokes", titleAlignment: "center" })
-  );
+  await getRandomJokes();
 })();
