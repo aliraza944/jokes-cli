@@ -1,6 +1,6 @@
 import axios from "axios";
 import chalk from "chalk";
-const getRandomJokes = async (type: string): Promise<string> => {
+const getJokesByType = async (type: string): Promise<string> => {
   try {
     const { data } = await axios.get(
       `https://official-joke-api.appspot.com/jokes/${type}/random`
@@ -15,4 +15,4 @@ const getRandomJokes = async (type: string): Promise<string> => {
     throw new Error("Error fetching jokes");
   }
 };
-export default getRandomJokes;
+export default getJokesByType;
