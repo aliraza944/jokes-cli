@@ -4,6 +4,7 @@
     "target": "ESNext",
     "lib": ["es2015"],
     "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
     "sourceMap": true,
     "outDir": "bin",
     "baseUrl": ".",
