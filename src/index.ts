@@ -2,7 +2,6 @@
 import getRandomJokes from "./fetchJokes/getRandomJokes.js";
 import getJokesByType from "./fetchJokes/getJokesByType.js";
 import yargs from "yargs/yargs";
-import { hideBin } from "yargs/helpers";
 const argv = yargs(process.argv.slice(2)).parseSync();
 (async () => {
   if (

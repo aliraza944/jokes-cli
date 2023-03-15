@@ -1,7 +1,6 @@
 import axios from "axios";
-import chalk from "chalk";
-import boxen from "boxen";
 import ora from "ora";
+import formatJoke from "../helpers/formatJoke.js";
 type JokeType = "general" | "programming" | "knock-knock";
 
 const getJokesByType = async (type: JokeType): Promise<void> => {
@@ -14,14 +13,7 @@ const getJokesByType = async (type: JokeType): Promise<void> => {
 
     if (data) {
       spinner.stop();
-      const joke = `
-    ${chalk.green(data[0].setup)}
-    
-    ${chalk.yellow.bgBlack.bold(data[0].punchline)}
-    `;
-      console.log(
-        boxen(joke, { padding: 2, title: "Jokes", titleAlignment: "center" })
-      );
+      formatJoke(data[0].setup, data[0].punchline);
     }
   } catch (error) {
     throw new Error("Error fetching jokes");
