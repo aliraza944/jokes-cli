@@ -2,7 +2,12 @@
 import getRandomJokes from "./fetchJokes/getRandomJokes.js";
 import getJokesByType from "./fetchJokes/getJokesByType.js";
 import yargs from "yargs/yargs";
-const argv = yargs(process.argv.slice(2)).parseSync();
+const argv = yargs(process.argv.slice(2))
+  .usage(
+    "This is a cli to get jokes on your command line interface\n\nTo get a random joke:\n $funny-joke-cli\n\n To get specific type of joke:\n $funny-joke-cli <type> \n \n Types of jokes:\n general | programming | knock-knock"
+  )
+  .parseSync();
+
 (async () => {
   if (
     argv._[0] === "general" ||
@@ -14,3 +19,5 @@ const argv = yargs(process.argv.slice(2)).parseSync();
   }
   await getRandomJokes();
 })();
+
+function howToUse() {}
