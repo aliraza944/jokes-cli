@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 import getRandomJokes from "./fetchJokes/getRandomJokes.js";
 import getJokesByType from "./fetchJokes/getJokesByType.js";
+import { getPackageVersion } from "./helpers/getPackageVersion.js";
 import yargs from "yargs/yargs";
 const argv = yargs(process.argv.slice(2))
   .usage(
@@ -8,7 +9,7 @@ const argv = yargs(process.argv.slice(2))
   )
   .help("help")
   .alias("help", "h")
-  .version("version", "1.0.3")
+  .version("version", getPackageVersion())
   .alias("version", "V")
   .parseSync();
 
