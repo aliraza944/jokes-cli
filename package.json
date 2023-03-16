@@ -1,6 +1,6 @@
 {
   "name": "funny-jokes-cli",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Simple cli to print jokes",
   "type": "module",
   "main": "bin/index.js",
