@@ -2,6 +2,9 @@
 
 A simple CLI that prints random or specific type joke on your command line interface.
 
+![image](https://user-images.githubusercontent.com/50791045/225694755-1ce98058-21ac-4e2d-9e6c-aab972050054.png)
+
+
 ## How to use
 You can install the CLI by running the following command in your terminal
 `npm install -g funny-jokes-cli`
