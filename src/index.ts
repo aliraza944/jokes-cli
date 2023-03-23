@@ -5,7 +5,7 @@ import { getPackageVersion } from "./helpers/getPackageVersion.js";
 import yargs from "yargs/yargs";
 const argv = yargs(process.argv.slice(2))
   .usage(
-    "This a cli to get jokes on your command line interface\n\nTo get a random joke:\n $funny-joke-cli\n\n To get specific type of joke:\n $funny-joke-cli <type> \n \n Types of jokes:\n general | programming | knock-knock"
+    "This a cli to get jokes on your command line interface\n\nTo get a random joke:\n $joke\n\n To get specific type of joke:\n $joke <type> \n \n Types of jokes:\n general | programming | knock-knock"
   )
   .help("help")
   .alias("help", "h")
