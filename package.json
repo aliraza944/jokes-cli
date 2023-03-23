@@ -4,10 +4,12 @@
   "description": "Simple cli to print jokes",
   "type": "module",
   "main": "bin/index.js",
-  "bin": "bin/index.js",
+  "bin": {
+    "joke": "bin/index.js"
+  },
   "scripts": {
     "build": "tsc",
-    "local": "npm run build && npx funny-jokes-cli",
+    "local": "npm run build && npx joke",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
