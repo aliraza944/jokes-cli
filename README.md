@@ -13,7 +13,7 @@ Then run the `joke` command to read a joke.
 You can also specify a certain type of joke. The **programming**, **general** and **knock-knock** type jokes are available. Just run `joke <type>` to read your specific joke.
 
 ## Run it locally
-Download the code or clone this repo and run `npm i` to install dependencies. After that run `npm run local`. THis will build the project and print a joke. When the build is complete you can use the `npx funny-jokes-cli` to print jokes.
+Download the code or clone this repo and run `npm i` to install dependencies. After that run `npm run local`. THis will build the project and print a joke. When the build is complete you can use the `npx joke` to print jokes.
 ## 👨‍💻 Contributing
 
 - Contributions make the open source community such an amazing place to learn, inspire, and create.
