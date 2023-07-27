@@ -1,4 +1,13 @@
-[![npm version](https://badge.fury.io/js/funny-jokes-cli.svg)](https://badge.fury.io/js/funny-jokes-cli)
+<img src="https://i.imgur.com/1pU4G0r.png" alt="funny-jokes-cli">
+
+
+<div align="center">
+	<h1>Funny Jokes CLI<br>
+	<!-- <img src="https://img.shields.io/npm/l/react-cli?color=8A2BE2"> -->
+	<img src="https://img.shields.io/npm/v/funny-jokes-cli">
+	<img src="https://img.shields.io/npm/dw/funny-jokes-cli">
+	</h1>
+</div>
 
 # funny-jokes-cli
 
