@@ -9,9 +9,8 @@
 	</h1>
 </div>
 
-# funny-jokes-cli
 
-A simple CLI that prints random or specific type joke on your command line interface.
+>A simple CLI that prints random or specific type joke on your command line interface.
 
 
 ## How to use
